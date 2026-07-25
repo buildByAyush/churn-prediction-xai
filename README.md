@@ -151,7 +151,7 @@ If you use this work, please cite:
 
 ## 👤 Authors
 
-- **Ayush ** 
+- **Ayush** 
 - **Ayush Jaiswal**
 
 ## 📜 License
