@@ -151,8 +151,8 @@ If you use this work, please cite:
 
 ## 👤 Authors
 
-- **Ayush Jaiswal** — [LinkedIn](#) · [GitHub](#)
-- **Ayush**
+- **Ayush ** 
+- **Ayush Jaiswal**
 
 ## 📜 License
 
