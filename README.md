@@ -12,18 +12,19 @@
 
 ## 📌 Overview
 
-Telecom companies lose 15–25% of customers annually, and acquiring a new customer costs 5–7x more than retaining one. Most churn models are either accurate-but-opaque or interpretable-but-weak. This project closes that gap: it pairs a high-performance gradient-boosted classifier with a rigorous, game-theoretic explainability layer, so retention teams get **both** a ranked risk score and the *exact reasons* behind it for every customer.
+Telecom companies lose 15–25% of customers annually, and acquiring a new customer costs 5–7x more than retaining one. Most churn models are either accurate-but-opaque or interpretable-but-weak. This project closes that gap: it pairs a high-performance gradient-boosted classifier with a rigorous, game-theoretic explainability layer, so retention teams get **both** a ranked risk score and the _exact reasons_ behind it for every customer.
 
 ## 🎯 Key Results
 
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|---|---|---|---|---|---|
-| Logistic Regression (baseline) | 80.3% | 0.652 | 0.556 | 0.600 | 0.792 |
-| **XGBoost (final)** | 79.1% | 0.625 | 0.529 | 0.573 | **0.834** |
+| Model                          | Accuracy | Precision | Recall | F1-Score | ROC-AUC   |
+| ------------------------------ | -------- | --------- | ------ | -------- | --------- |
+| Logistic Regression (baseline) | 80.3%    | 0.652     | 0.556  | 0.600    | 0.792     |
+| **XGBoost (final)**            | 79.1%    | 0.625     | 0.529  | 0.573    | **0.834** |
 
 XGBoost was selected as the production model despite marginally lower raw accuracy, because **ROC-AUC is the operative business metric** here — it governs how well the model ranks at-risk customers, which directly determines the cost-effectiveness of retention campaigns.
 
 **Top churn drivers identified via SHAP:**
+
 1. **Tenure** — new customers (<12 months) churn disproportionately more
 2. **Contract type** — month-to-month customers are highest risk; 2-year contracts strongly reduce churn
 3. **Internet service (Fiber optic)** — mixed signal, indicates a dissatisfied sub-segment
@@ -67,14 +68,14 @@ Raw Data (7,043 records, 21 features)
 
 ## 🛠️ Tech Stack
 
-| Category | Tools |
-|---|---|
-| Language | Python 3.10+ |
-| Data | pandas, NumPy |
-| Modeling | scikit-learn, XGBoost |
-| Explainability | SHAP |
-| Visualization | matplotlib, seaborn |
-| Dataset | [IBM Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (Kaggle) |
+| Category       | Tools                                                                                               |
+| -------------- | --------------------------------------------------------------------------------------------------- |
+| Language       | Python 3.10+                                                                                        |
+| Data           | pandas, NumPy                                                                                       |
+| Modeling       | scikit-learn, XGBoost                                                                               |
+| Explainability | SHAP                                                                                                |
+| Visualization  | matplotlib, seaborn                                                                                 |
+| Dataset        | [IBM Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (Kaggle) |
 
 ## 📂 Project Structure
 
@@ -127,7 +128,7 @@ ROC-AUC:   0.8342
 
 This work was submitted and presented as a mini/research project at an **International Conference on Intelligent Computing**, under the title:
 
-> *"Explainable AI Framework for Customer Churn Prediction in Telecommunications: A Comparative Study using XGBoost and SHAP"*
+> _"Explainable AI Framework for Customer Churn Prediction in Telecommunications: A Comparative Study using XGBoost and SHAP"_
 
 📎 Paper link: `<add DOI / conference proceedings link here>`
 
@@ -151,8 +152,8 @@ If you use this work, please cite:
 
 ## 👤 Authors
 
-- **Ayush** 
-- **Ayush Jaiswal**
+- **Ayush** — [LinkedIn](https://www.linkedin.com/in/ayush-sharma-52196a2a5?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+- **Ayush Jiaswal**
 
 ## 📜 License
 
